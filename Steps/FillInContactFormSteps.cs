@@ -30,6 +30,7 @@ namespace AppliedContactTest.Steps
         {
             SelectElement DropDown = new SelectElement(driver.FindElement(By.Id("What_can_we_help_with__c")));
             DropDown.SelectByText(FormChoice);
+            driver.Close();
         }
     }
 }
